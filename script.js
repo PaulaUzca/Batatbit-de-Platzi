@@ -54,9 +54,6 @@ var posicionInicial= plans_container.scrollLeft;
 plans_container.scrollLeft = size;
 
 //Uso mi "numero mágico" (la posicione inicial de scrollLeft del slider) para calcular la posicion exacta de cada una de las cajitas
-const plan_middle = new Plan(posicionInicial + size, plan[1]);
-const plan_left = new Plan(posicionInicial, plan[0]);
-const plan_right = new Plan(plan_middle.size+ size, plan[2]);
 
 //Ahora voy a hacer que cada uno de los planes sea un objeto de la clase plan, y de esta forma se me facilita manipularlo 
 class Plan {
@@ -73,6 +70,9 @@ class Plan {
     }
 }
 
+const plan_middle = new Plan(posicionInicial + size, plan[1]);
+const plan_left = new Plan(posicionInicial, plan[0]);
+const plan_right = new Plan(plan_middle.size+ size, plan[2]);
 
 
 console.log( `${plan_middle} left: ${plan_left} y right: ${plan_right}`);
