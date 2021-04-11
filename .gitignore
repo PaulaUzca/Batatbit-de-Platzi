@@ -1,0 +1,7 @@
+/ignore
+.jpg
+.jpeg
+.png\
+.gif
+/express
+/node_modules

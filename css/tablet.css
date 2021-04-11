@@ -1,0 +1,33 @@
+.slider-container .arrow{
+    visibility: hidden;
+}
+.plans-container--slider{
+overflow-x: hidden
+}
+.plans-container--card{
+    opacity: 1;
+}
+.product-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    width: 930px;
+}
+.product-detail-card{
+margin: 15px;
+}
+.main-table{
+    margin: 0 60px;
+}
+#main-convencion-table{
+    display: block;
+    order: 2;
+}
+#main-currency-table{
+    display: block;
+}
+#right-arrow,
+#left-arrow{
+    display: none;
+}
